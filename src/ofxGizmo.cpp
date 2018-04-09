@@ -107,6 +107,12 @@ void ofxGizmo::setDisplayScale( float aScale ) {
     gizmoRotate->SetDisplayScale( aScale );
     gizmoMove->SetDisplayScale( aScale );
     gizmoScale->SetDisplayScale( aScale );
+    displayScale = aScale;
+}
+
+//--------------------------------------------------------------
+float ofxGizmo::getDisplayScale() {
+    return displayScale;
 }
 
 //--------------------------------------------------------------

@@ -27,6 +27,7 @@ public:
     void draw( ofCamera& aCam );
     
     void setDisplayScale( float aScale );
+    float getDisplayScale();
     void setType( ofxGizmoType aType );
     ofMatrix4x4& getMatrix();
     
@@ -61,6 +62,7 @@ protected:
     bool _bHasMouseEvents;
     bool _bInteracting;
     bool _bVisible;
+    float displayScale = 1;
     
     float _windowW, _windowH;
     bool bNodeSet;
